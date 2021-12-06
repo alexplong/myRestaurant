@@ -1,0 +1,48 @@
+html {
+  font-size: 100%;            // better control zoom level in browser
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {                        // add resets and basic properties
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  background-color: aqua;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+
+// Flexbox styles
+.flex {
+    display: flex;
+    &-dir-r {
+      flex-direction: row;
+    }
+    &-dir-c {
+      flex-direction: column;
+    }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-jc-fe {
+      justify-content: flex-end;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+// Block styles
+.block {
+  display: block;
+}
